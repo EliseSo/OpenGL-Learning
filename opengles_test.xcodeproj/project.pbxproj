@@ -13,6 +13,7 @@
 		AE0B050B236FCC4E00BABCD1 /* GLShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B050A236FCC4E00BABCD1 /* GLShaderViewController.m */; };
 		AE0B0510237114EC00BABCD1 /* CubicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B050F237114EC00BABCD1 /* CubicViewController.m */; };
 		AE0B051323711FDE00BABCD1 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0B051223711FDE00BABCD1 /* CameraViewController.m */; };
+		AE0B817B237BEB73006FA304 /* shader in Resources */ = {isa = PBXBuildFile; fileRef = AE0B817A237BEB73006FA304 /* shader */; };
 		AE81ACA92362E08C0002C766 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE81ACA82362E08C0002C766 /* AppDelegate.m */; };
 		AE81ACAC2362E08C0002C766 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE81ACAB2362E08C0002C766 /* SceneDelegate.m */; };
 		AE81ACAF2362E08C0002C766 /* TriangleController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE81ACAE2362E08C0002C766 /* TriangleController.m */; };
@@ -24,7 +25,6 @@
 		AE81ACD02362E44A0002C766 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81ACCF2362E44A0002C766 /* GLKit.framework */; };
 		AE82F9B3237533CE0034C701 /* UIImage+Texture.m in Sources */ = {isa = PBXBuildFile; fileRef = AE82F9B0237533CD0034C701 /* UIImage+Texture.m */; };
 		AE82F9B4237533CE0034C701 /* ShaderLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AE82F9B2237533CE0034C701 /* ShaderLoader.m */; };
-		AE82F9B6237536700034C701 /* shader in Resources */ = {isa = PBXBuildFile; fileRef = AEE5F53523751CAB00B1319F /* shader */; };
 		AE82F9BF2375498F0034C701 /* MosaicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE82F9BE2375498F0034C701 /* MosaicViewController.m */; };
 		AEE5F53323751C2D00B1319F /* res in Resources */ = {isa = PBXBuildFile; fileRef = AEE5F53223751C2D00B1319F /* res */; };
 /* End PBXBuildFile section */
@@ -52,6 +52,7 @@
 		AE0B050F237114EC00BABCD1 /* CubicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubicViewController.m; sourceTree = "<group>"; };
 		AE0B051123711FDE00BABCD1 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		AE0B051223711FDE00BABCD1 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		AE0B817A237BEB73006FA304 /* shader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shader; sourceTree = "<group>"; };
 		AE81ACA42362E08C0002C766 /* opengles_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opengles_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE81ACA72362E08C0002C766 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE81ACA82362E08C0002C766 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		AE82F9BD2375498F0034C701 /* MosaicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MosaicViewController.h; sourceTree = "<group>"; };
 		AE82F9BE2375498F0034C701 /* MosaicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosaicViewController.m; sourceTree = "<group>"; };
 		AEE5F53223751C2D00B1319F /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
-		AEE5F53523751CAB00B1319F /* shader */ = {isa = PBXFileReference; lastKnownFileType = folder; name = shader; path = /Users/naver/Documents/code/opengles_test/opengles_test/shader; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +144,8 @@
 				AE81ACB52362E08D0002C766 /* LaunchScreen.storyboard */,
 				AE81ACB82362E08D0002C766 /* Info.plist */,
 				AE81ACB92362E08D0002C766 /* main.m */,
+				AE0B817A237BEB73006FA304 /* shader */,
 				AE82F9B5237533E70034C701 /* util */,
-				AEE5F53523751CAB00B1319F /* shader */,
 				AEE5F53223751C2D00B1319F /* res */,
 			);
 			path = opengles_test;
@@ -259,7 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE82F9B6237536700034C701 /* shader in Resources */,
+				AE0B817B237BEB73006FA304 /* shader in Resources */,
 				AEE5F53323751C2D00B1319F /* res in Resources */,
 				AE81ACB72362E08D0002C766 /* LaunchScreen.storyboard in Resources */,
 				AE81ACB42362E08D0002C766 /* Assets.xcassets in Resources */,

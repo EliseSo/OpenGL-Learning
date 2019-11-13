@@ -60,7 +60,6 @@ typedef enum : NSUInteger {
     [self commit];
 
     [self setMosaicButton];
-
 }
 
 - (void)setupRenderLayer {
