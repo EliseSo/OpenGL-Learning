@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uhT-2c-PwN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="cns-Ph-226">
+            <objects>
+                <viewController id="VLo-cy-ttN" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hRB-6F-Hjf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbt-C5-kat">
+                                <rect key="frame" x="164" y="168" width="86" height="30"/>
+                                <state key="normal" title="Emoji(GLKit)"/>
+                                <connections>
+                                    <action selector="showGLKitView:" destination="VLo-cy-ttN" eventType="touchUpInside" id="nof-Dn-PJH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktv-eP-54u" userLabel="Texture GLSL">
+                                <rect key="frame" x="161" y="208" width="92" height="30"/>
+                                <state key="normal" title="Texture GLSL"/>
+                                <connections>
+                                    <action selector="showEAGLView:" destination="VLo-cy-ttN" eventType="touchUpInside" id="NVA-Qg-J1a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fV-BS-q4K" userLabel="Bricks Texture">
+                                <rect key="frame" x="140.5" y="248" width="133" height="30"/>
+                                <state key="normal" title="Textures Transform"/>
+                                <connections>
+                                    <action selector="showTextureView:" destination="VLo-cy-ttN" eventType="touchUpInside" id="YpN-mg-u0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-rg-8Gb" userLabel="Bricks Texture">
+                                <rect key="frame" x="187" y="288" width="40" height="30"/>
+                                <state key="normal" title="Cubic"/>
+                                <connections>
+                                    <action selector="showCubicView:" destination="VLo-cy-ttN" eventType="touchUpInside" id="cIE-p1-IIM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY2-Es-HYu" userLabel="Bricks Texture">
+                                <rect key="frame" x="165" y="328" width="84" height="30"/>
+                                <state key="normal" title="Camera test"/>
+                                <connections>
+                                    <action selector="showCameraView:" destination="VLo-cy-ttN" eventType="touchUpInside" id="QtY-hO-bTR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XY2-Es-HYu" firstAttribute="top" secondItem="zId-MO-3yM" secondAttribute="top" constant="240" id="22a-kg-jVE"/>
+                            <constraint firstItem="ebS-rg-8Gb" firstAttribute="top" secondItem="zId-MO-3yM" secondAttribute="top" constant="200" id="5PA-42-SGR"/>
+                            <constraint firstItem="6fV-BS-q4K" firstAttribute="centerX" secondItem="zId-MO-3yM" secondAttribute="centerX" id="Gfa-aQ-b7A"/>
+                            <constraint firstItem="Ktv-eP-54u" firstAttribute="centerX" secondItem="zId-MO-3yM" secondAttribute="centerX" id="Gg0-jp-HGz"/>
+                            <constraint firstItem="ebS-rg-8Gb" firstAttribute="centerX" secondItem="zId-MO-3yM" secondAttribute="centerX" id="Q0f-Sr-7RZ"/>
+                            <constraint firstItem="6fV-BS-q4K" firstAttribute="top" secondItem="zId-MO-3yM" secondAttribute="top" constant="160" id="b5f-3C-O2B"/>
+                            <constraint firstItem="XY2-Es-HYu" firstAttribute="centerX" secondItem="zId-MO-3yM" secondAttribute="centerX" id="pOT-XP-qX9"/>
+                            <constraint firstItem="pbt-C5-kat" firstAttribute="top" secondItem="zId-MO-3yM" secondAttribute="top" constant="80" id="rBl-fk-fKV"/>
+                            <constraint firstItem="Ktv-eP-54u" firstAttribute="top" secondItem="zId-MO-3yM" secondAttribute="top" constant="120" id="uIW-GW-caB"/>
+                            <constraint firstItem="pbt-C5-kat" firstAttribute="centerX" secondItem="zId-MO-3yM" secondAttribute="centerX" id="wy6-Yv-2pQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zId-MO-3yM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uab-YQ-53P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG0-9p-Gw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439.13043478260875" y="147.99107142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bwn-NF-p08">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uhT-2c-PwN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lqk-GR-9kC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VLo-cy-ttN" kind="relationship" relationship="rootViewController" id="LkJ-b4-2l2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRL-ub-I15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1349.2753623188407" y="147.99107142857142"/>
+        </scene>
+    </scenes>
+</document>
